@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+
+
+  .menubar {
+    background-color:#fff;
+    justify-content: space-between;
+    display: flex;
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    height: 8vh;
+    align-items: center;
+}
+#toggle-btn{
+    cursor: pointer;
+    height: 2vw;
+    padding: 8px;
+    color: #eee;
+}
+#logo-icon{
+  /* position:absolute; */
+  position: fixed;
+  height: 28px;
+  padding: 8px;
+  left: 4vw;
+}
+.menubar input{
+  position: relative;
+  margin-left: 23vw;
+  margin-right: 29vw;
+  border-radius: 5vw;
+  margin-top: .5vh;
+  width: 32vw;
+  height: 5vh;
+  text-align: center;
+  border: solid 2px #cccc;
+  left: 8vw;
+  
+}
+.menubar #id1{
+  height: 3vh;
+  position: relative;
+  left:-27vw;
+  
+
+ 
+}
+.menubar #id2{
+  border-radius: 50%;
+  height: 5vh;
+  padding-top: 3px;
+  position: relative;
+  
+}
+.menubar #id3{
+  height: 3vh;
+  position:relative;
+  left:-27vw;
+}
+
+
+.menu-item {
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+  
+}
+
+.sub-menu {
+    display: none;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    position: absolute;
+    z-index: 1;
+}
+
+.sub-menu-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.container{
+   background-color: rgb(240, 240, 240);
+     width: 95%; 
+     margin: auto;
+     /* height: 100vh; */
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-gap: 30px;
+     position: absolute;
+     top: 0;
+     padding-top: 60px;
+     margin-left: 2.5vw;
+     z-index: 0;
+     
+} 
+.container>div img{
+  width: 100%;
+  border-radius: 10px;
+}
+.container>div{
+  border-bottom: solid 2px #ccc;
+  border-radius: 10px;
+  
+}
+
+  .sidebar {
+    height: 100vh;
+    width: 240px;
+    position: fixed;
+   
+    /* top: -710vh; */
+    /* left: -250px; */
+    background-color: rgb(249, 240, 240);
+    padding-top: 60px;
+    transition: left 0.3s ease-in-out;
+    /* margin-top: 2vh; */
+    z-index: 1;
+  }
+  
+  .sidebar a {
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    transition: color 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: white;
+  }
+  
+  /* .main{
+    height:100vh;  
+    width: 100vw;
+     
+     background-color: green;
+     position: relative;
+     transition: left 0.4s ease-in-out;
+  } */
+
+   /* .box{
+    height: fit-content;
+    width:150px;
+    background-color: white;
+    margin-left: 10px;
+  } 
+  .box img{
+    width:150px;
+  } */
+
+
+@media (max-width:600px){
+  .container{
+  display: grid;
+     grid-template-columns: repeat(1,1fr);
+     /* grid-gap: 30px; */
+  }
+  .container>div img{
+    width: 100%;
+    border-radius: 10px;
+    
+  }
+  #toggle-btn{
+    position:relative;
+
+    height: 4vw;
+    /* padding-right: 5vw; */
+  }
+  #logo-icon{
+    position:fixed;
+    height: 25px;
+    margin-right: 10px;
+    /* background-color: red; */
+    left:9vw
+  }
+  .menubar input{
+    position:relative;
+    margin-left: 0vw;
+    font-size: 4vw;
+    width: 22vw;
+    height: 25px;
+    border:  solid 1px;
+    text-decoration: none;
+    left:29vw;
+    align-items: center;
+    
+  
+  }
+  .menubar {
+     display: flex; 
+     align-items: center;
+     justify-content: space-between;
+    width: 100vw;
+    height: 8vh;
+} 
+.menubar #id1{
+  height: 2.2vh;
+  position: relative;
+  left:-6vw;
+  /* display: none; */
+  
+  
+}
+.menubar #id2{
+  height: 3.5vh;
+  position: relative;
+  right:10px;
+}
+  .menubar #id3{
+    height: 3vh;
+    position:relative;
+    left:-4vw;
+  }
+  
+  
+
+.sidebar{
+  position: fixed;
+}
+}
+
+
+  
+
+
+
+
+
+
+.containerr{
+  background-color: rgb(240, 240, 240);
+    width: 95%; 
+    margin: auto;
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px;
+    /* position: absolute; */
+    padding-top: 60px;
+    margin-left: 2.5vw;
+    z-index: 0;
+    
+} 
+.containerr>div img{
+  width: 100%;
+  border-radius: 10px;
+  
+}
+
+
+
+
+@media (max-width:700px){
+.containerr{
+  display: grid;
+     grid-template-columns: repeat(1,1fr);
+     /* grid-gap: 30px; */
+  }
+  .containerr>div img{
+    width: 100%;
+    border-radius: 10px;
+    
+  }
+}
+
+#preloader{
+  background: #fff url(loader.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
